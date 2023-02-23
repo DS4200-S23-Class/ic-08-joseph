@@ -1,3 +1,10 @@
+// set up constants
+const width = 600;
+const height = 400;
+const margin = { top: 20, right: 20, bottom: 40, left: 40 };
+const innerWidth = width - margin.left - margin.right;
+const innerHeight = height - margin.top - margin.bottom;
+
 // create SVG Bar chart
 const svgBar = d3.select('#bar-chart')
   .attr('width', width)
